@@ -34,7 +34,10 @@ A single, typed schema for the seven categories of context that matter for AI ag
 Install the TypeScript types:
 
 ```bash
-npm install @threadline/context-schema
+# Clone the repo
+git clone https://github.com/vidursharma202-del/context-schema
+
+# Or copy types.ts directly into your project
 ```
 
 Validate a context object:
