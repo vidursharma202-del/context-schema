@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/vidursharma202-del/context-schema/schema.json",
+  "title": "ThreadlineContext",
+  "description": "Open schema for AI agent user context. Seven typed scopes covering all meaningful dimensions of persistent user context.",
+  "type": "object",
+  "properties": {
+    "preferences": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Working style, tool preferences, format preferences, behavioural instructions.",
+      "examples": [["No code examples unless asked", "Prefers dark mode interfaces"]]
+    },
+    "goals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Active projects, current objectives, what the user is working toward.",
+      "examples": [["Launching a SaaS product targeting developers", "Finish Q2 investor deck"]]
+    },
+    "knowledge": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Technical stack, domain expertise, skills, professional background.",
+      "examples": [["5 years TypeScript", "Next.js", "Supabase", "Previously at EY"]]
+    },
+    "history": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What happened in past sessions — decisions made, progress, completed tasks.",
+      "examples": [["Deployed to Vercel on 2026-04-15", "Chose Lemon Squeezy over Stripe"]]
+    },
+    "relationships": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "People the user mentions — team members, clients, collaborators, their roles.",
+      "examples": [["Co-founder Sarah handles design", "Investor: Rahul at AJVC"]]
+    },
+    "communication_style": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "How the user likes to be spoken to — tone, verbosity, structure.",
+      "examples": [["Concise answers preferred", "Bullet points over prose", "No filler phrases"]]
+    },
+    "general": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Core identity and context that doesn't fit other scopes.",
+      "examples": [["Based in Delhi, India", "Pre-revenue founder", "Works in IST timezone"]]
+    }
+  },
+  "additionalProperties": false
+}
