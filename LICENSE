@@ -1,0 +1,6 @@
+- [Threadline Context Schema](https://github.com/vidursharma202-del/context-schema) - 
+Open specification for AI agent context. Seven typed scopes (preferences, goals, 
+knowledge, history, relationships, communication_style, general) with JSON Schema 
+validation and TypeScript types. Model-agnostic, framework-agnostic, user-owned 
+by design. ![GitHub Repo stars](https://img.shields.io/github/stars/
+vidursharma202-del/context-schema?style=social)
